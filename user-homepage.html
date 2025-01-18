@@ -31,20 +31,22 @@
                 </ul>
             </div>
         </div>
-        <div id="ani-section" class="h-full bg-white/45 backdrop-blur-2xl absolute z-40 w-[25%] top-0 right-[-30%]  pt-180 pb-180 px-30 rounded-md">
-            <div id="account" class=" bg-gray-700/30 py-1 flex items-center flex-col h-[170px] absolute top-9  w-11/12 rounded-xl text-white text-2xl">
+        <div id="ani-section" class="h-[100vh] bg-white/45 backdrop-blur-2xl absolute z-40 w-[25%] top-0 right-[-30%]  pt-180 pb-180 px-30 rounded-md">
+            <div id="account" class=" bg-gray-700/30 py-1 flex items-center flex-col h-[170px] absolute top-9  mb-9 w-11/12 rounded-xl text-white text-2xl">
                 <i class="text-white text-5xl ri-account-circle-fill"></i>
                 <h1>UserName</h1>
-                <div id="buttons" class="px-5 mt-3">
-                    <button type="button" class="bg-cyan-600 px-2 py-1 rounded-lg"><a href="./login.html">LogIn</a></button>
-                    <button type="button" class=" bg-cyan-600 px-2 py-1 rounded-lg mx-2"><a href="./registration.html">Sign Up</a></button>
-                    <button type="button" class="bg-cyan-600 px-2 py-1 rounded-lg">LogOut</button>
+                <div id="buttons" class="px-9 mt-3">
+                    <button type="button" class="bg-cyan-600 w-[80px] rounded-lg"><a href="">Wallet</a></button>
+                    <button type="button" class=" bg-cyan-600  w-[80px] rounded-lg mx-2"><a href="">Info</a></button>
+                    <button type="button" class="bg-cyan-600  w-[100px] rounded-lg">LogOut</button>
                 </div>
             </div>
-            <h3 class="text-5xl py-9 font-Audiowide pl-5 pt-28  text-white"><a href="./tournament.html">Tournament</a></h3>
-            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="./blog.html">Blog</a></h3>
+            <h3 class="text-5xl py-9 font-Audiowide pl-5 pt-32  text-white"><a href="./tournament.html">Tournament</a></h3>
+            <h3 class="text-5xl py-5 font-Audiowide pl-5 text-white"><a href="./blog.html">Blog</a></h3>
             <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="./games.html">Our Games</a></h3>
-            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="./review.html">Reviews</a></h3>
+            <h3 class="text-5xl py-5 font-Audiowide pl-5 text-white"><a href="./review.html">Reviews</a></h3>
+            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="">VaderCoin</a></h3>
+            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="">Store</a></h3>
             <i id="close" class="ri-close-large-line absolute top-[5%] opacity-0 right-[6%] text-2xl text-white w-fit rounded-full p-3 transition-all duration-300 cursor-pointer hover:bg-gray-500/45"></i>
         </div>
         <h1 id="heading" class="text-white text-[200px] z-0 text-center mt-32 font-ROG">MEET VADER</h1>
@@ -52,7 +54,7 @@
 <!-- <spline-viewer url="https://prod.spline.design/lRYX2EWBDa3mW3RM/scene.splinecode"></spline-viewer> -->
         </div>
     </div>
-    <div id="carousel" class="h-[65vh] w-[200vw] overflow-x-hidden  bg-black">
+    <div id="carousel" class="h-[65vh] w-[200vw] overflow-x-hidden  bg-black lg:h-[35vh]">
         <div id="carousel-1" class=" h-[40vh] w-[100vw] flex items-center  gap-3 mb-1.5">
             <img src="./img/OIP (1).png" alt="" class="h-[100%] w-[75%] object-cover rounded-[9px] transition-all duration-500 ease-out pl-3 hover:scale-105">
             <img src="./img/OIP.png" alt="" class="h-[100%] w-[75%] object-cover object-top rounded-[9px] transition-all duration-500 ease-out hover:scale-105">
@@ -81,12 +83,12 @@
           
         </div>
     </div>
-    <div id="community" class="h-[120vh] w-screen bg-black text-white flex">
-        <div id="detail" class="h-[50vh] w-[48%] ">
-        <h1 class="text-[120px]"> Come Join Us</h1>
-        <p class="text-4xl w-[800px] text-left">Vader Verse is a vibrant gaming discovery platform connecting players, enthusiasts, and creators. Explore new games, join tournaments, and engage with a community-driven space for gamers of all levels and interests.</p>
+    <div id="community" class="h-[120vh] w-screen bg-black text-white flex justify-between">
+        <div id="detail" class="h-[50vh] w-[48%] flex flex-col justify-center items-center">
+        <h1 id="heading-1" class="text-[120px]"> Come Join Us</h1>
+        <p id="heading-2" class="text-4xl w-[800px] text-left">Vader Verse is a vibrant gaming discovery platform connecting players, enthusiasts, and creators. Explore new games, join tournaments, and engage with a community-driven space for gamers of all levels and interests.</p>
         </div>
-        <div id="socials" class="h-[80vh] w-[51%] grid grid-cols-2 grid-rows-2 gap-5">
+        <div id="socials" class="h-[80vh] w-[51%] grid grid-cols-2 grid-rows-2 gap-5 md:w-[70%]">
             <div class="group relative bg-black rounded-xl flex justify-center items-center border-white border-2 mt-4 transition-all duration-300 ease-in-out hover:scale-105 hover:rotate-x-6 hover:rotate-y-6 ">
                 <i class="ri-twitter-x-line text-6xl"></i>
             </div>
@@ -101,8 +103,67 @@
             </div>
         </div>        
     </div>
+    <div id="animation">
+    <div id="page1"></div>
+    <div id="page2">
+        <div id="move">
+            <div class="marq">
+                <h1>Discover. Play. Conquer the Galaxy</h1>
+                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marq">
+                <h1>Discover. Play. Conquer the Galaxy</h1>
+                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marq">
+                <h1>Discover. Play. Conquer the Galaxy</h1>
+                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marq">
+                <h1>Discover. Play. Conquer the Galaxy</h1>
+                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+            <div class="marq">
+                <h1>Discover. Play. Conquer the Galaxy</h1>
+                <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div id="page3"></div>
+    <div id="About" class="h-[130vh] w-screen bg-black text-white flex gap-9">
+        <div id="content" class="h-screen w-[50vw] bg-black">
+            <div id="imageholder">
+            <img src="./img/vision.jpeg" class="h-[500px] w-full object-cover" alt="">
+            </div>
+        <div id="text" class="bg-black">
+            <h1 class="text-[130px] text-center">Vision</h1>
+                <p class="text-3xl  w-[400px] text-center  bottom-0 mx-auto">To be the ultimate gaming hub where players effortlessly discover, connect, and thrive in a personalized, immersive, and community-driven experience.</p>
+        </div>
+        </div>
+        <div id="content2" class="h-screen w-[50vw] bg-black ">
+        <div id="text2" class="h-[550px]">
+            <h1 class="text-[130px] text-center mt-[-20px]">Mission</h1>
+                <p class="text-3xl  w-[400px] text-center  bottom-0 mx-auto mt-[-10px] h-[100px]">
+                    To create a dynamic platform that simplifies game discovery, fosters meaningful connections within the gaming community, and delivers a seamless, engaging experience for players of all kinds. Through innovation.</p>
+        </div>
+        <div id="imageholder1">
+            <img src="./img/mission.jpeg" class="h-[500px] w-full object-cover" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+    </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./new.js"></script>
+    <script
+    src="https://www.chatbase.co/embed.min.js"
+    chatbotId="ZFNnqABrT3ATAplf30GBz" 
+    domain="www.chatbase.co"
+    defer>
+</script>
 </body>
 </html>

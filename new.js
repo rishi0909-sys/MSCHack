@@ -163,3 +163,27 @@ window.addEventListener("resize", () => {
 });
 
 animate();
+window.addEventListener("wheel",(e)=>{
+  console.log(e.deltaY)
+  if(e.deltaY>0){
+      gsap.to(".marq",{
+          transform:'translateX(-300%)',
+          duration:2.5,
+          repeat:-1,
+          ease:"none"
+      })
+      gsap.to(".marq img",{
+          rotate:180
+      })
+  }else{
+      gsap.to(".marq",{
+          transform:'translateX(0%)',
+          duration:4,
+          repeat:-1,
+          ease:"none"
+      })
+      gsap.to(".marq img",{
+          rotate:0
+      })
+  }
+})
