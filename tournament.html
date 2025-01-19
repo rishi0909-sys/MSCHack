@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./output.css">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+    rel="stylesheet"/>
     <title>Document</title>
     <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.59/build/spline-viewer.js"></script>
 </head>
+<style>
+    #reg h1{
+        position: absolute; 
+        z-index: 100;
+    }
+    #reg:hover{
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(35px);
+        color: white;
+    }
+</style>
 <body>
     <div id="main" class="bg-black h-screen w-screen text-white">
         <div id="element" class="z-0 h-screen w-screen flex justify-center items-center">
@@ -41,12 +55,28 @@
             <spline-viewer class="relative top-[-100%] z-0" url="https://prod.spline.design/AECPmrvrzeHye1hj/scene.splinecode"></spline-viewer>
         </div>
         <div id="Tournament-section" class="h-[70vh] w-screen flex items-center bg-black gap-5 ">
-        <div id="reg" class=" h-[50vh] w-[50vw] text-white text-7xl text-center bg-white/55 backdrop-blur-2xl rounded-xl ">
-            <h1>Live Tournament</h1>
+        <div id="reg" class=" h-[50vh] w-[50vw] text-black text-7xl text-center bg-white/55 backdrop-blur-2xl rounded-xl flex justify-center hover: transition-all duration-300 ease-out text-white">
+            <h1 class="z-30">Upcoming Tournament</h1>
+            <i class="ri-chess-fill text-white absolute"></i>
+            <video class="object-cover absolute top-0 hover:blur-xl transition-all duration-300 ease-out" src="./Video/Prototype2.mp4" autoplay loop muted ></video>
         </div>
      <div id="ongoing" class=" h-[50vh] w-[50vw] text-white text-7xl text-center bg-white/55 rounded-xl backdrop-blur-2xl">
         <h1>Tournament Registration</h1>
      </div>
         </div>
 </body>
+<script>
+    document.querySelectorAll('#reg').forEach(container => {
+  const video = container.querySelector('video');
+
+  container.addEventListener('mouseenter', () => {
+    video.pause();
+  });
+
+  container.addEventListener('mouseleave', () => {
+    video.play();
+  });
+});
+
+</script>
 </html>

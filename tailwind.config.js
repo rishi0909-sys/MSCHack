@@ -11,6 +11,9 @@ module.exports = {
         Stencil:["Stencil","serif"],
         Vin:["Vineritc","serif"],
       },
+      gridTemplateColumns:{
+        '10': 'repeat(10, minmax(0, 300px))',
+      },
       spacing: {
         '180': '180px',
         '30': '30px',

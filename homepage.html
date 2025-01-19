@@ -22,9 +22,9 @@
                 <ul class="flex">
                     <li class="pl-3 pr-7 font-Audiowide"><a href="#home">Home</a></li>
                     <li class="pl-3 pr-7 font-Audiowide"><a href="#community">Community</a></li>
-                    <li class="pl-3 pr-7 font-Audiowide"><a href="">Live</a></li>
-                    <li class="pl-3 pr-7 font-Audiowide"><a href="">About</a></li>
-                    <li class="pl-3 pr-7 font-Audiowide"><a href="">Support</a></li>
+                    <li class="pl-3 pr-7 font-Audiowide"><a href="./notfound.html">Live</a></li>
+                    <li class="pl-3 pr-7 font-Audiowide"><a href="#About">About</a></li>
+                    <!-- <li class="pl-3 pr-7 font-Audiowide"><a href="">Support</a></li> -->
                 </ul>
                 <ul class="flex">
                     <li><i id="menu" class="ri-menu-3-line text-4xl font-thin pr-9 cursor-pointer"></i></li>
@@ -49,7 +49,7 @@
         </div>
         <h1 id="heading" class="text-white text-[200px] z-0 text-center mt-32 font-ROG">MEET VADER</h1>
         <div id="vaderui" class="h-[120vh] w-screen absolute top-[-10%]">
-<!-- <spline-viewer url="https://prod.spline.design/lRYX2EWBDa3mW3RM/scene.splinecode"></spline-viewer> -->
+<spline-viewer url="https://prod.spline.design/lRYX2EWBDa3mW3RM/scene.splinecode"></spline-viewer>
         </div>
     </div>
     <div id="carousel" class="h-[65vh] w-[200vw] overflow-x-hidden  bg-black">
@@ -81,7 +81,7 @@
           
         </div>
     </div>
-    <div id="community" class="h-[120vh] w-screen bg-black text-white flex">
+    <div id="community" class="h-[120vh] w-screen bg-black text-white flex justify-between">
         <div id="detail" class="h-[50vh] w-[48%] ">
         <h1 class="text-[120px]"> Come Join Us</h1>
         <p class="text-4xl w-[800px] text-left">Vader Verse is a vibrant gaming discovery platform connecting players, enthusiasts, and creators. Explore new games, join tournaments, and engage with a community-driven space for gamers of all levels and interests.</p>
@@ -101,6 +101,81 @@
             </div>
         </div>        
     </div>
+    <div id="animation">
+        <div id="page1"></div>
+        <div id="page2">
+            <div id="move">
+                <div class="marq">
+                    <h1>Discover. Play. Conquer the Galaxy</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marq">
+                    <h1>Discover. Play. Conquer the Galaxy</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marq">
+                    <h1>Discover. Play. Conquer the Galaxy</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marq">
+                    <h1>Discover. Play. Conquer the Galaxy</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+                <div class="marq">
+                    <h1>Discover. Play. Conquer the Galaxy</h1>
+                    <img src="https://www.brandium.nl/wp-content/uploads/2023/07/arrow-br.svg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id="page3"></div>
+        <div id="About" class="h-[130vh] w-screen bg-black text-white flex gap-9">
+            <div id="content" class="h-screen w-[50vw] bg-black">
+                <div id="imageholder">
+                <img src="./img/vision.jpeg" class="h-[500px] w-full object-cover" alt="">
+                </div>
+            <div id="text" class="bg-black">
+                <h1 class="text-[130px] text-center">Vision</h1>
+                    <p class="text-3xl  w-[400px] text-center  bottom-0 mx-auto">To be the ultimate gaming hub where players effortlessly discover, connect, and thrive in a personalized, immersive, and community-driven experience.</p>
+            </div>
+            </div>
+            <div id="content2" class="h-screen w-[50vw] bg-black ">
+            <div id="text2" class="h-[550px]">
+                <h1 class="text-[130px] text-center mt-[-20px]">Mission</h1>
+                    <p class="text-3xl  w-[400px] text-center  bottom-0 mx-auto mt-[-10px] h-[100px]">
+                        To create a dynamic platform that simplifies game discovery, fosters meaningful connections within the gaming community, and delivers a seamless, engaging experience for players of all kinds. Through innovation.</p>
+            </div>
+            <div id="imageholder1">
+                <img src="./img/mission.jpeg" class="h-[500px] w-full object-cover" alt="">
+                </div>
+            </div>
+        </div>
+        <script>
+            window.addEventListener("wheel",(e)=>{
+  console.log(e.deltaY)
+  if(e.deltaY>0){
+      gsap.to(".marq",{
+          transform:'translateX(-300%)',
+          duration:2.5,
+          repeat:-1,
+          ease:"none"
+      })
+      gsap.to(".marq img",{
+          rotate:180
+      })
+  }else{
+      gsap.to(".marq",{
+          transform:'translateX(0%)',
+          duration:4,
+          repeat:-1,
+          ease:"none"
+      })
+      gsap.to(".marq img",{
+          rotate:0
+      })
+  }
+})
+
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./new.js"></script>

@@ -22,10 +22,9 @@
                 <ul class="flex">
                     <li class="pl-3 pr-7 font-Audiowide"><a href="#home">Home</a></li>
                     <li class="pl-3 pr-7 font-Audiowide"><a href="#community">Community</a></li>
-                    <li class="pl-3 pr-7 font-Audiowide"><a href="">Live</a></li>
-                    <li class="pl-3 pr-7 font-Audiowide"><a href="">About</a></li>
-                    <li class="pl-3 pr-7 font-Audiowide"><a href="">Support</a></li>
-                </ul>
+                    <li class="pl-3 pr-7 font-Audiowide"><a target="_blank" href="https://www.youtube.com/gaming/live">Live</a></li>
+                    <li class="pl-3 pr-7 font-Audiowide"><a href="#About">About</a></li>
+                                </ul>
                 <ul class="flex">
                     <li><i id="menu" class="ri-menu-3-line text-4xl font-thin pr-9 cursor-pointer"></i></li>
                 </ul>
@@ -36,7 +35,7 @@
                 <i class="text-white text-5xl ri-account-circle-fill"></i>
                 <h1>UserName</h1>
                 <div id="buttons" class="px-9 mt-3">
-                    <button type="button" class="bg-cyan-600 w-[80px] rounded-lg"><a href="">Wallet</a></button>
+                    <button type="button" class="bg-cyan-600 w-[80px] rounded-lg"><a href="./wallet.html">Wallet</a></button>
                     <button type="button" class=" bg-cyan-600  w-[80px] rounded-lg mx-2"><a href="">Info</a></button>
                     <button type="button" class="bg-cyan-600  w-[100px] rounded-lg">LogOut</button>
                 </div>
@@ -45,13 +44,13 @@
             <h3 class="text-5xl py-5 font-Audiowide pl-5 text-white"><a href="./blog.html">Blog</a></h3>
             <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="./games.html">Our Games</a></h3>
             <h3 class="text-5xl py-5 font-Audiowide pl-5 text-white"><a href="./review.html">Reviews</a></h3>
-            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="">VaderCoin</a></h3>
-            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="">Store</a></h3>
+            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="./vadercoin.html">VaderCoin</a></h3>
+            <h3 class="text-5xl py-9 font-Audiowide pl-5 text-white"><a href="./store.html">Store</a></h3>
             <i id="close" class="ri-close-large-line absolute top-[5%] opacity-0 right-[6%] text-2xl text-white w-fit rounded-full p-3 transition-all duration-300 cursor-pointer hover:bg-gray-500/45"></i>
         </div>
         <h1 id="heading" class="text-white text-[200px] z-0 text-center mt-32 font-ROG">MEET VADER</h1>
         <div id="vaderui" class="h-[120vh] w-screen absolute top-[-10%]">
-<!-- <spline-viewer url="https://prod.spline.design/lRYX2EWBDa3mW3RM/scene.splinecode"></spline-viewer> -->
+<spline-viewer url="https://prod.spline.design/lRYX2EWBDa3mW3RM/scene.splinecode"></spline-viewer>
         </div>
     </div>
     <div id="carousel" class="h-[65vh] w-[200vw] overflow-x-hidden  bg-black lg:h-[35vh]">
@@ -154,8 +153,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
-    </div>
-    </div>
+<script>
+    window.addEventListener("wheel",(e)=>{
+  console.log(e.deltaY)
+  if(e.deltaY>0){
+      gsap.to(".marq",{
+          transform:'translateX(-300%)',
+          duration:2.5,
+          repeat:-1,
+          ease:"none"
+      })
+      gsap.to(".marq img",{
+          rotate:180
+      })
+  }else{
+      gsap.to(".marq",{
+          transform:'translateX(0%)',
+          duration:4,
+          repeat:-1,
+          ease:"none"
+      })
+      gsap.to(".marq img",{
+          rotate:0
+      })
+  }
+})
+
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js" integrity="sha512-+LXqbM6YLduaaxq6kNcjMsQgZQUTdZp7FTaArWYFt1nxyFKlQSMdIF/WQ/VgsReERwRD8w/9H9cahFx25UDd+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="./new.js"></script>
